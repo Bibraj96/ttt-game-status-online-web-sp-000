@@ -18,4 +18,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.any? do |win_combo|
     win_combo.any?
+    return win_combo
 end
