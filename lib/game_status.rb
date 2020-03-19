@@ -33,3 +33,13 @@ def won?(board)
   }
   return false
 end
+
+def full?(board)
+  board.all? do |full_board|
+    if full_board == true
+      return true
+    else
+      return false
+    end
+  end
+end
