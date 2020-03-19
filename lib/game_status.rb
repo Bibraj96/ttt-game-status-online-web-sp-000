@@ -35,11 +35,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |full_board|
-    if full_board == true
-      return true
-    else
-      return false
-    end
-  end
+  board.all? {|index| index == "X" || index == "O"}
 end
